@@ -1,0 +1,38 @@
+.output--data--container {
+  .table--box {
+    overflow: hidden;
+    overflow-x: auto;
+    table {
+      margin: 20px 0;
+      text-align: center;
+      .icons--col {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .table--icon {
+          font-size: 20px;
+          transition: all 0.5s;
+          &:hover,
+          &:active {
+            transform: scale(1.2);
+          }
+        }
+        .delete--icon {
+          font-size: 25px;
+          color: rgb(249, 131, 131);
+          &:hover,
+          &:active {
+            color: rgb(251, 74, 74);
+          }
+        }
+        .edit--icon {
+          color: green;
+          &:hover,
+          &:active {
+            color: rgb(0, 181, 0);
+          }
+        }
+      }
+    }
+  }
+}

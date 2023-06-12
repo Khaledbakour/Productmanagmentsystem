@@ -1,0 +1,19 @@
+.output--filter-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  .input--group {
+    grid-column: span 2;
+    margin-bottom: 5px;
+  }
+  button {
+    width: 90%;
+    &:last-of-type {
+      justify-self: end;
+    }
+  }
+  .button--component--active {
+    background-color: rgb(99, 64, 0);
+    color: white;
+  }
+}

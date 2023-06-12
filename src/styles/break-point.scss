@@ -1,0 +1,12 @@
+$xSmall: 480px;
+$small: 667px;
+$medium: 1024px;
+$large: 1280px;
+$xLarge: 1680px;
+@mixin breakpoint($display) {
+  @if $display <= $xSmall {
+    @media #{$display} {
+      @content;
+    }
+  }
+}

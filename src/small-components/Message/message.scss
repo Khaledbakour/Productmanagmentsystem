@@ -1,0 +1,16 @@
+.message {
+  padding: 8px;
+  text-align: center;
+  border-radius: 9px;
+}
+// Variances
+.error--message {
+  @extend .message;
+  background-color: rgb(235, 140, 140);
+  color: rgb(86, 1, 1);
+}
+.success--message {
+  @extend .message;
+  background-color: rgb(140, 235, 154);
+  color: rgb(1, 86, 7);
+}

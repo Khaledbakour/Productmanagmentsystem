@@ -1,0 +1,22 @@
+@import "./styles/variables.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: $body_Bg_Color;
+  color: $font_Color;
+}
+
+.mother--container {
+  width: 80%;
+  margin: 2% auto 0;
+  min-width: 320px;
+
+  // header section
+  
+}

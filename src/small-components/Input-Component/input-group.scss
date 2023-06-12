@@ -1,0 +1,62 @@
+.input--group {
+  position: relative;
+  background-color: rgb(33, 33, 33);
+  border-radius: 12px;
+  transition: all 0.8s;
+  padding-bottom: 1px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  width: 100%;
+  border: 1px solid transparent;
+  label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    transition: all 0.8s;
+    color: rgb(90, 59, 0);
+  }
+  input {
+    padding: 10px;
+    padding-bottom: 4px;
+    width: 100%;
+    background-color: transparent;
+    color: orange;
+
+    &[type="number"] {
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+  &:focus-within {
+    transform: scale(1.1);
+    box-shadow: 0 0 2px orange;
+    label {
+      transform: scale(0.7);
+      color: rgb(116, 75, 0);
+      top: -5px;
+      left: -5px;
+    }
+  }
+}
+
+// is not empty
+
+.input--group--not--empty {
+  label {
+    transform: scale(0.7);
+    color: rgb(116, 75, 0);
+    top: -5px !important;
+    left: -4px !important;
+  }
+}
+
+// error
+.input--group--error {
+  border-color: red;
+}

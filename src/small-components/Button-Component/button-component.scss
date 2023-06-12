@@ -1,0 +1,38 @@
+.button--component {
+  width: 100%;
+  padding: 7px;
+  border-radius: 12px;
+  text-transform: capitalize;
+  background: transparent;
+  color: orange;
+  box-shadow: inset 0 0 7px orange;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-bottom: 15px;
+  &:hover,
+  &:active {
+    transform: scale(1.1);
+    background-color: orange;
+    color: black;
+    font-weight: 600;
+  }
+}
+
+.primary--button--component {
+  @extend .button--component;
+  color: orange;
+  box-shadow: inset 0 0 7px orange;
+  &:hover,
+  &:active {
+    background-color: orange;
+  }
+}
+.danger--button--component {
+  @extend .button--component;
+  color: red;
+  box-shadow: inset 0 0 7px red;
+  &:hover,
+  &:active {
+    background-color: red;
+  }
+}
